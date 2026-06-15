@@ -45,36 +45,16 @@ export default function Reviews() {
     <section id="reviews" className="section-padding bg-background border-b border-editorial">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-          <div className="text-left space-y-3">
-            <span className="text-primary text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase block">
-              Ulasan Pelanggan
-            </span>
-            <h2 className="text-3xl md:text-5xl font-light tracking-tight leading-[1.2]">
-              Apa Kata <span className="italic-serif text-primary">Pelanggan Kami</span>
-            </h2>
-          </div>
-
-          <div className="flex items-center gap-3 bg-muted border border-editorial px-5 py-3 rounded-2xl w-fit flex-shrink-0">
-            <div className="bg-[#4285F4] p-1.5 rounded-lg text-white flex items-center justify-center font-bold text-xs">
-              G
-            </div>
-            <div>
-              <div className="flex items-center gap-1">
-                <span className="text-sm font-bold text-foreground">Google Rating</span>
-                <span className="text-sm font-bold text-primary">4.9★</span>
-              </div>
-              <div className="flex items-center gap-0.5 mt-0.5">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-[#FBBC05] text-[#FBBC05]" />
-                ))}
-                <span className="text-[10px] text-muted-foreground ml-1.5">Berdasarkan ulasan pelanggan</span>
-              </div>
-            </div>
-          </div>
+        <div className="text-left space-y-3">
+          <span className="text-primary text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase block">
+            Ulasan Pelanggan
+          </span>
+          <h2 className="text-3xl md:text-5xl font-light tracking-tight leading-[1.2]">
+            Apa Kata <span className="italic-serif text-primary">Pelanggan Kami</span>
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+        <div className="flex md:grid md:grid-cols-3 gap-3 md:gap-6 pt-4 overflow-x-auto md:overflow-visible no-scrollbar snap-x snap-mandatory md:snap-none pb-2 md:pb-0">
           {reviews.map((rev, index) => (
             <motion.div
               key={rev.id}
@@ -82,28 +62,27 @@ export default function Reviews() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="bg-background border border-editorial p-6 rounded-2xl flex flex-col justify-between space-y-6 shadow-sm hover:shadow-md transition-all duration-300"
+              className="snap-start flex-shrink-0 w-[75vw] md:w-auto md:flex-shrink bg-background border border-editorial p-4 md:p-6 rounded-xl md:rounded-2xl flex flex-col justify-between gap-3 md:gap-6 shadow-sm"
             >
-              <p className="text-foreground/80 text-sm font-light leading-relaxed italic">
+              <p className="text-foreground/80 text-[11px] md:text-sm font-light leading-relaxed italic line-clamp-5 md:line-clamp-none">
                 "{rev.text}"
               </p>
 
-              <div className="flex items-center gap-4 pt-4 border-t border-editorial">
-                <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-bold text-sm">
+              <div className="flex items-center gap-2 md:gap-4 pt-2 md:pt-4 border-t border-editorial">
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-bold text-[10px] md:text-sm flex-shrink-0">
                   {rev.initials}
                 </div>
-                
-                <div className="flex-grow space-y-0.5">
-                  <h4 className="text-sm font-semibold text-foreground tracking-tight leading-none">
+                <div className="flex-grow space-y-0.5 min-w-0">
+                  <h4 className="text-xs md:text-sm font-semibold text-foreground tracking-tight leading-tight truncate">
                     {rev.name}
                   </h4>
-                  <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center justify-between gap-1">
                     <div className="flex items-center gap-0.5">
                       {[...Array(rev.rating)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 fill-[#FBBC05] text-[#FBBC05]" />
+                        <Star key={i} className="w-2.5 h-2.5 md:w-3 md:h-3 fill-[#FBBC05] text-[#FBBC05]" />
                       ))}
                     </div>
-                    <span className="text-[10px] text-muted-foreground">
+                    <span className="text-[9px] md:text-[10px] text-muted-foreground whitespace-nowrap">
                       {rev.date}
                     </span>
                   </div>

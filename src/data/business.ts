@@ -21,7 +21,7 @@ export const businessInfo: BusinessInfo = {
   },
   operationalHours: '09.00 – 23.00',
   coordinates: {
-    lat: -2.993478, // Approximate latitude for Ilir Barat II, Palembang
-    lng: 104.744439, // Approximate longitude
+    lat: -2.993478,
+    lng: 104.744439,
   },
 };

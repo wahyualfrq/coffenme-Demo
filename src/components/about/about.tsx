@@ -10,13 +10,13 @@ export default function About() {
   const collectionItems = [
     {
       id: 1,
-      src: '/menu/steak-sapi.png',
+      src: '/menu/steak.png',
       alt: 'Cita Rasa Autentik',
       caption: 'Cita Rasa Autentik',
     },
     {
       id: 2,
-      src: '/menu/cappuccino.png',
+      src: '/menu/kopi.png',
       alt: 'Pilihan Barista',
       caption: 'Seduhan Kopi Pilihan',
     },

@@ -16,7 +16,7 @@ const inter = Inter({
   display: 'swap',
 });
 
-const siteUrl = 'https://coffeeandme.com'; // Standard canonical website URL
+const siteUrl = 'https://coffeeandme.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

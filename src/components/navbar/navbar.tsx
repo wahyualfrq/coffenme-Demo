@@ -26,7 +26,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScrollSpy = () => {
       const sections = ['about', 'menu', 'gallery', 'location'];
-      const scrollPosition = window.scrollY + 120; // offset for navbar height + buffer
+      const scrollPosition = window.scrollY + 120;
 
       if (window.scrollY < 150) {
         setActiveSection('home');

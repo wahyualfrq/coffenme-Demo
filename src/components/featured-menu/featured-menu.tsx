@@ -26,7 +26,7 @@ export default function FeaturedMenu() {
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           
           <div className="lg:col-span-7 flex flex-col h-full w-full">
-            <div className="space-y-4 lg:space-y-6 flex-grow max-h-[380px] lg:max-h-none overflow-y-auto lg:overflow-visible pr-2 lg:pr-0 no-scrollbar">
+            <div className="space-y-4 lg:space-y-6 flex-grow max-h-[380px] lg:max-h-none overflow-y-auto lg:overflow-visible px-1 lg:px-0 no-scrollbar">
               {menuItems.map((item, index) => (
                 <motion.div
                   initial={{ opacity: 0, y: 15 }}
@@ -35,7 +35,7 @@ export default function FeaturedMenu() {
                   transition={{ duration: 0.4, delay: index * 0.05 }}
                   key={item.id}
                   onClick={() => setSignatureItem(item)}
-                  className={`flex gap-3 sm:gap-6 items-start group cursor-pointer p-3 -mx-3 rounded-2xl transition-all duration-300 ${
+                  className={`flex gap-3 sm:gap-6 items-start group cursor-pointer p-3 rounded-2xl transition-all duration-300 ${
                     signatureItem.id === item.id ? 'bg-muted shadow-sm border border-editorial/20' : 'hover:bg-muted/50 border border-transparent'
                   }`}
                 >

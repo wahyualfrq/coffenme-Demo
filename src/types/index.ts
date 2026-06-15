@@ -3,7 +3,7 @@ export type MenuCategory = 'main' | 'beverage';
 export interface MenuItem {
   id: string;
   name: string;
-  price: string; // e.g., 'Rp45.000' or can be number, let's keep it clean
+  price: string;
   description?: string;
   image: string;
   category: MenuCategory;

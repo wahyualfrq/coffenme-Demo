@@ -82,31 +82,7 @@ export default function Location() {
               </div>
             </div>
 
-            <div className="space-y-4 pt-8 border-t border-editorial">
-              <span className="text-[10px] tracking-[0.15em] uppercase font-bold text-muted-foreground block">
-                Tautan Kontak & Media Sosial
-              </span>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href={businessInfo.whatsapp.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/95 text-white px-6 py-3 rounded-full text-xs font-bold tracking-[0.15em] uppercase shadow-sm transition-all hover:scale-[1.02] duration-200"
-                >
-                  <Phone className="w-3.5 h-3.5" />
-                  <span>WhatsApp Reservasi</span>
-                </a>
-                <a
-                  href={businessInfo.instagram.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-background border border-border text-foreground hover:bg-muted px-6 py-3 rounded-full text-xs font-bold tracking-[0.15em] uppercase shadow-sm transition-all hover:scale-[1.02] duration-200"
-                >
-                  <Instagram className="w-3.5 h-3.5 text-primary" />
-                  <span>Instagram</span>
-                </a>
-              </div>
-            </div>
+
           </motion.div>
 
           <motion.div

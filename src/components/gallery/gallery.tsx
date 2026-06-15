@@ -55,14 +55,14 @@ export default function Gallery() {
       src: '/gallery/g6.png',
       alt: 'Ruang nyaman dan dingin karena ac',
       category: 'cafe',
-      spanClass: 'col-span-2 row-span-1 h-[150px] md:h-[238px]',
+      spanClass: 'col-span-2 row-span-1 h-[150px] md:h-[238px] order-7 md:order-none',
     },
     {
       id: 7,
       src: '/gallery/g7.png',
       alt: 'Area Terbuka Outdoor Nyaman',
       category: 'cafe',
-      spanClass: 'col-span-1 row-span-1 h-[150px] md:h-[238px]',
+      spanClass: 'col-span-1 row-span-1 h-[150px] md:h-[238px] order-6 md:order-none',
     },
   ];
 
