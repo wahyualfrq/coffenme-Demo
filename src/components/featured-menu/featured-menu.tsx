@@ -88,7 +88,7 @@ export default function FeaturedMenu() {
             
             <div className="pt-8 lg:pt-12 pl-3">
               <a
-                href="/Menu-CoffeAndMe.pdf"
+                href="/Menu-CoffeAndMe-new.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-primary hover:bg-primary/95 text-white px-8 py-3.5 rounded-full text-xs font-bold tracking-[0.15em] uppercase shadow-md transition-all hover:scale-105 duration-250 cursor-pointer w-full md:w-auto justify-center"

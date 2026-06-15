@@ -12,8 +12,8 @@ export const businessInfo: BusinessInfo = {
     postalCode: '31113',
   },
   whatsapp: {
-    number: '0853-9800-0093',
-    link: 'https://wa.me/6285398000093',
+    number: '0821-8529-1515',
+    link: 'https://wa.me/6282185291515',
   },
   instagram: {
     username: '@coffeeandme_plg',
