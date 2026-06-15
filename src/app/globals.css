@@ -89,6 +89,15 @@ h1, h2, h3, h4, h5, h6 {
   background: #A10208;
 }
 
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Editorial Style Utilities */
 .italic-serif {
   font-family: var(--font-serif), Georgia, serif;
@@ -106,4 +115,3 @@ h1, h2, h3, h4, h5, h6 {
 .border-editorial {
   border-color: rgba(31, 31, 31, 0.08);
 }
-

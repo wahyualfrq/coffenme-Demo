@@ -61,23 +61,23 @@ export default function WhyUs() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
-          className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-editorial/15 border-y md:border-x-0 border-editorial/15 py-8 md:py-12"
+          className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-editorial/15 border-y md:border-x-0 border-editorial/15 py-2 md:py-12"
         >
           {features.map((feature, idx) => (
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="p-6 md:p-10 flex flex-col justify-start space-y-4 md:space-y-6 first:pl-0 last:pr-0"
+              className="py-4 md:p-10 flex flex-col justify-start space-y-2 md:space-y-6 md:first:pl-0 md:last:pr-0"
             >
-              <span className="text-xs font-bold tracking-widest text-primary block">
+              <span className="text-[10px] md:text-xs font-bold tracking-widest text-primary block">
                 {feature.num}
               </span>
 
-              <h3 className="text-xl md:text-2xl font-normal tracking-tight text-foreground">
+              <h3 className="text-lg md:text-2xl font-normal tracking-tight text-foreground">
                 {feature.title}
               </h3>
 
-              <p className="text-muted-foreground text-sm md:text-base font-light leading-relaxed">
+              <p className="text-muted-foreground text-xs md:text-base font-light leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

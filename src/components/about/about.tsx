@@ -22,13 +22,13 @@ export default function About() {
     },
     {
       id: 3,
-      src: '/gallery/g4.png',
+      src: '/gallery/g3.png',
       alt: 'Sudut Bersantai',
       caption: 'Ruang Nyaman & Tenang',
     },
     {
       id: 4,
-      src: '/hero/interior_cinematic.png',
+      src: '/gallery/g5.png',
       alt: 'Suasana Hangat',
       caption: 'Suasana Premium',
     },
