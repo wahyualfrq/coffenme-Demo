@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+import ImageWithSkeleton from '@/components/ui/image-with-skeleton';
 import { motion } from 'framer-motion';
 
 interface GalleryItem {
@@ -92,7 +92,7 @@ export default function Gallery() {
               key={item.id}
               className={`relative overflow-hidden rounded-2xl border border-border bg-muted shadow-sm group ${item.spanClass}`}
             >
-              <Image
+              <ImageWithSkeleton
                 src={item.src}
                 alt={item.alt}
                 fill

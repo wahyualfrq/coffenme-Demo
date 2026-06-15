@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+import ImageWithSkeleton from '@/components/ui/image-with-skeleton';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { businessInfo } from '@/data/business';
@@ -108,7 +108,7 @@ export default function About() {
               className="space-y-4"
             >
               <div className="relative overflow-hidden aspect-[3/4] rounded-lg border border-editorial shadow-sm bg-muted group">
-                <Image
+                <ImageWithSkeleton
                   src={item.src}
                   alt={item.alt}
                   fill

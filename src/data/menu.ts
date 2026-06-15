@@ -14,7 +14,7 @@ export const menuItems: MenuItem[] = [
     name: 'Steak Daging Sapi',
     price: 'Rp55.000',
     description: 'Daging sapi pilihan panggang dengan tingkat kematangan sempurna, disiram saus lada hitam lezat dan kentang.',
-    image: '/menu/steak-sapi.png',
+    image: '/menu/steak-sapi.jpg',
     category: 'main',
   },
   {
@@ -30,7 +30,7 @@ export const menuItems: MenuItem[] = [
     name: 'Nasi Ayam Penyet Sambal Matah',
     price: 'Rp32.000',
     description: 'Ayam goreng renyah yang dimemarkan disajikan dengan sambal matah khas Bali yang segar, lalapan, dan nasi hangat.',
-    image: '/menu/nasi-ayam-penyet.png',
+    image: '/menu/nasi-ayam-penyet.jpg',
     category: 'main',
   },
   {
@@ -38,7 +38,7 @@ export const menuItems: MenuItem[] = [
     name: 'Cappuccino',
     price: 'Rp25.000',
     description: 'Espresso klasik dengan steamed milk lembut dan foam tebal di atasnya, ditaburi sedikit bubuk cokelat.',
-    image: '/menu/cappuccino.png',
+    image: '/menu/cappuccino.jpg',
     category: 'beverage',
   },
   {
@@ -54,7 +54,7 @@ export const menuItems: MenuItem[] = [
     name: 'Magic Lemonade',
     price: 'Rp18.000',
     description: 'Minuman lemonade dingin yang segar dengan gradasi warna ungu alami dari bunga telang yang memikat.',
-    image: '/menu/magic-lemonade.png',
+    image: '/menu/magic-lemonade.jpg',
     category: 'beverage',
   },
   {
@@ -62,7 +62,7 @@ export const menuItems: MenuItem[] = [
     name: 'Jus Strawberry',
     price: 'Rp20.000',
     description: 'Jus dari buah stroberi segar pilihan, kaya vitamin C dan sangat menyegarkan dahaga Anda.',
-    image: '/menu/jus-strawberry.png',
+    image: '/menu/jus-strawberry.jpg',
     category: 'beverage',
   },
 ];

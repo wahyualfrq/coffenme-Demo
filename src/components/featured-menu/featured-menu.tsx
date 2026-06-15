@@ -1,11 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, UtensilsCrossed } from 'lucide-react';
 import { menuItems } from '@/data/menu';
 import { businessInfo } from '@/data/business';
+import ImageWithSkeleton from '@/components/ui/image-with-skeleton';
 
 export default function FeaturedMenu() {
   const [signatureItem, setSignatureItem] = useState(menuItems.find(item => item.id === 'steak-sapi') || menuItems[0]);
@@ -40,7 +40,7 @@ export default function FeaturedMenu() {
                   }`}
                 >
                   <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border border-editorial bg-background flex-shrink-0">
-                    <Image
+                    <ImageWithSkeleton
                       src={item.image}
                       alt={item.name}
                       fill
@@ -111,7 +111,7 @@ export default function FeaturedMenu() {
               >
                 <div className="absolute -inset-4 rounded-3xl border border-editorial translate-x-2 translate-y-2 pointer-events-none z-0" />
                 <div className="relative z-10 overflow-hidden rounded-2xl shadow-md aspect-[3/4] bg-muted">
-                  <Image
+                  <ImageWithSkeleton
                     src={signatureItem.image}
                     alt={signatureItem.name}
                     fill
