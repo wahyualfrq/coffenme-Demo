@@ -1,0 +1,68 @@
+import { MenuItem } from '@/types';
+
+export const menuItems: MenuItem[] = [
+  {
+    id: 'steak-ayam',
+    name: 'Steak Ayam',
+    price: 'Rp45.000',
+    description: 'Daging ayam fillet panggang yang empuk disajikan dengan sayuran segar, kentang goreng, dan saus barbekyu khas.',
+    image: '/menu/steak-ayam-new.png',
+    category: 'main',
+  },
+  {
+    id: 'steak-sapi',
+    name: 'Steak Daging Sapi',
+    price: 'Rp55.000',
+    description: 'Daging sapi pilihan panggang dengan tingkat kematangan sempurna, disiram saus lada hitam lezat dan kentang.',
+    image: '/menu/steak-sapi.png',
+    category: 'main',
+  },
+  {
+    id: 'iga-bbq',
+    name: 'Iga BBQ',
+    price: 'Rp55.000',
+    description: 'Iga sapi panggang empuk berbalut saus BBQ manis-gurih yang meresap sempurna, disajikan dengan nasi hangat.',
+    image: '/menu/iga-bbq-new.png',
+    category: 'main',
+  },
+  {
+    id: 'nasi-ayam-penyet',
+    name: 'Nasi Ayam Penyet Sambal Matah',
+    price: 'Rp32.000',
+    description: 'Ayam goreng renyah yang dimemarkan disajikan dengan sambal matah khas Bali yang segar, lalapan, dan nasi hangat.',
+    image: '/menu/nasi-ayam-penyet.png',
+    category: 'main',
+  },
+  {
+    id: 'cappuccino',
+    name: 'Cappuccino',
+    price: 'Rp25.000',
+    description: 'Espresso klasik dengan steamed milk lembut dan foam tebal di atasnya, ditaburi sedikit bubuk cokelat.',
+    image: '/menu/cappuccino.png',
+    category: 'beverage',
+  },
+  {
+    id: 'kopi-susu',
+    name: 'Kopi Susu Coffee & Me',
+    price: 'Rp22.000',
+    description: 'Kopi susu gula aren khas kami yang creamy, manis pas, dan menyegarkan.',
+    image: '/menu/kopi-susu-new.png',
+    category: 'beverage',
+  },
+  {
+    id: 'magic-lemonade',
+    name: 'Magic Lemonade',
+    price: 'Rp18.000',
+    description: 'Minuman lemonade dingin yang segar dengan gradasi warna ungu alami dari bunga telang yang memikat.',
+    image: '/menu/magic-lemonade.png',
+    category: 'beverage',
+  },
+  {
+    id: 'jus-strawberry',
+    name: 'Jus Strawberry',
+    price: 'Rp20.000',
+    description: 'Jus dari buah stroberi segar pilihan, kaya vitamin C dan sangat menyegarkan dahaga Anda.',
+    image: '/menu/jus-strawberry.png',
+    category: 'beverage',
+  },
+];

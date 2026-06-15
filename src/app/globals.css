@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FCFDFC;
+  --foreground: #1F1F1F;
+  
+  --primary: #A10208;
+  --primary-foreground: #FCFDFC;
+  
+  --muted: #F3F4F6;
+  --muted-foreground: #6B6B6B;
+  
+  --border: #EAEAEA;
+  --accent: #F7E7E8;
+  
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif), serif;
+}
+
+/* Custom utility class for container spacing */
+.section-padding {
+  padding-top: 3rem; /* 48px - Mobile */
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding-top: 4.5rem; /* 72px - Tablet */
+    padding-bottom: 4.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: 5.5rem; /* 88px - Desktop */
+    padding-bottom: 5.5rem;
+  }
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FCFDFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D1D1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A10208;
+}
+
+/* Editorial Style Utilities */
+.italic-serif {
+  font-family: var(--font-serif), Georgia, serif;
+  font-style: italic;
+}
+
+.text-glow-red {
+  text-shadow: 0 0 40px rgba(161, 2, 8, 0.4);
+}
+
+.bg-ambient-red {
+  background: radial-gradient(circle at 50% 50%, rgba(161, 2, 8, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+.border-editorial {
+  border-color: rgba(31, 31, 31, 0.08);
+}
+
